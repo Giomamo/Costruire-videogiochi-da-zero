@@ -5,13 +5,18 @@ This repo is a C translation of Daniele Ceravolo's game online course at: doorst
 Lessons list:
 
 https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-0
+
 https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-1
+
 https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-2
+
 https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-3
+
 
 Lessons repository:
 
 https://github.com/mechanapoleon/DoorsToTheUnknown
+
 
 To compile C files on Linux use:
 
