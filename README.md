@@ -18,26 +18,28 @@ Lessons repository:
 https://github.com/mechanapoleon/DoorsToTheUnknown
 
 
+
 ## Getting Started
 
 ### Dependencies
 
 * Before compiling raylib, need to install gcc, make and graphic libraries (X11, OpenGL and ALSA).
 
-sudo apt install build-essential git libasound2-dev libx11-dev libxrandr-dev libxi-dev libxinerama-dev libxcursor-dev libxkbcommon-dev
+ sudo apt install build-essential git libasound2-dev libx11-dev libxrandr-dev libxi-dev libxinerama-dev libxcursor-dev libxkbcommon-dev
 
 * Clone and compile raylib:
 
- git clone https://github.com/raysan5/raylib
- cd raylib/src
+  git clone https://github.com/raysan5/raylib
+
+  cd raylib/src
 
 * Compile static library:
 
- make PLATFORM=PLATFORM_DESKTOP
+  make PLATFORM=PLATFORM_DESKTOP
 
 * Install as system library:
 
- sudo make install.
+  sudo make install.
 
 
 ## Run files
