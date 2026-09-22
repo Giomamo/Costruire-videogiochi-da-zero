@@ -39,7 +39,7 @@ https://github.com/mechanapoleon/DoorsToTheUnknown
 
 * Install as system library:
 
-  sudo make install.
+  sudo make install
 
 
 ## Run files
