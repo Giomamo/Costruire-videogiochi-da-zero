@@ -25,7 +25,7 @@ https://github.com/mechanapoleon/DoorsToTheUnknown
 
 * Before compiling raylib, need to install gcc, make and graphic libraries (X11, OpenGL and ALSA).
 
- sudo apt install build-essential git libasound2-dev libx11-dev libxrandr-dev libxi-dev libxinerama-dev libxcursor-dev libxkbcommon-dev
+  sudo apt install build-essential git libasound2-dev libx11-dev libxrandr-dev libxi-dev libxinerama-dev libxcursor-dev libxkbcommon-dev
 
 * Clone and compile raylib:
 
