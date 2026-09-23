@@ -45,12 +45,12 @@ https://github.com/mechanapoleon/DoorsToTheUnknown
 
   ## Run files
 
-* To compile:
+  * To compile:
 
   gcc -Wall -O2 gameN.c -o gameN -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 
 
-* To execute:
+  * To execute:
 
   ./gameN
 
@@ -58,4 +58,4 @@ https://github.com/mechanapoleon/DoorsToTheUnknown
 
   ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
+  This project is licensed under the MIT License - see the LICENSE.md file for details
