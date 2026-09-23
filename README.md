@@ -2,7 +2,7 @@
 
 This repo is a C translation of Daniele Ceravolo's game online course at: doorstotheunknown.substack.com/
 
-<br><br>
+<br>
 
 Lessons list:
 
@@ -14,7 +14,7 @@ Lessons list:
 
   https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-3
 
-<br><br>
+<br>
 
 Lessons repository:
 
