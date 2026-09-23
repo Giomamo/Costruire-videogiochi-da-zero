@@ -2,20 +2,22 @@
 
 This repo is a C translation of Daniele Ceravolo's game online course at: doorstotheunknown.substack.com/
 
+
 Lessons list:
 
-https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-0
+  https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-0
 
-https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-1
+  https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-1
 
-https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-2
+  https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-2
 
-https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-3
+  https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-3
+
 
 
 Lessons repository:
 
-https://github.com/mechanapoleon/DoorsToTheUnknown
+  https://github.com/mechanapoleon/DoorsToTheUnknown
 
 
 
@@ -23,7 +25,7 @@ https://github.com/mechanapoleon/DoorsToTheUnknown
 
 ### Dependencies
 
-* Before compiling raylib, need to install gcc, make and graphic libraries (X11, OpenGL and ALSA).
+* Before compiling raylib, need to install gcc, make and graphic libraries (X11, OpenGL and ALSA):
 
   sudo apt install build-essential git libasound2-dev libx11-dev libxrandr-dev libxi-dev libxinerama-dev libxcursor-dev libxkbcommon-dev
 
