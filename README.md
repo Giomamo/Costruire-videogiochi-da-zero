@@ -47,12 +47,12 @@ https://github.com/mechanapoleon/DoorsToTheUnknown
 
   * To compile:
 
-  gcc -Wall -O2 gameN.c -o gameN -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+    gcc -Wall -O2 gameN.c -o gameN -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 
 
   * To execute:
 
-  ./gameN
+    ./gameN
 
 
 
