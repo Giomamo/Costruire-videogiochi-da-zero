@@ -12,13 +12,13 @@ Lessons list:
   https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-2
 
   https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-3
-
+<br><br>
 
 
 Lessons repository:
 
   https://github.com/mechanapoleon/DoorsToTheUnknown
-
+<br><br>
 
 
 ## Getting Started
@@ -43,7 +43,7 @@ Lessons repository:
 
   sudo make install
 
-
+<br><br>
 
 ## Run files
 
@@ -56,7 +56,7 @@ Lessons repository:
 
     ./gameN
 
-
+<br><br>
 
 ## License
 
