@@ -14,6 +14,8 @@ Lessons list:
 
   https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-3
 
+  https://doorstotheunknown.substack.com/p/costruire-videogiochi-da-zero-4
+
 <br>
 
 Lessons repository:
