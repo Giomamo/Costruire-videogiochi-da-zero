@@ -17,13 +17,13 @@ int main(void)
 	  // load texture
     Texture2D devitt = LoadTexture("assets/devitt.png");
 
-	  Rectangle devittCollisionBorder = GetImageAlphaBorder(devittSprite, 0);
+	Rectangle devittCollisionBorder = GetImageAlphaBorder(devittSprite, 0);
 
     // init rectangle position
     Vector2 pos = { 100.0f, 100.0f }; 
     // set width, height and offset of image
     Vector2 dimensions = { (float)devittCollisionBorder.width * SCALE, devittCollisionBorder.height * SCALE}; 
-	  Vector2 offset = { (float)devittCollisionBorder.x * SCALE, (float)devittCollisionBorder.y * SCALE};
+	Vector2 offset = { (float)devittCollisionBorder.x * SCALE, (float)devittCollisionBorder.y * SCALE};
 
     float dt = 0;
 
@@ -42,13 +42,13 @@ int main(void)
         
         // normalize direction and calculate velocity
         direction = Vector2Normalize(direction);
-		    vel = Vector2Scale(direction, SPEED);
+		vel = Vector2Scale(direction, SPEED);
         // update position: pos = pos + (vel * dt)
         pos = Vector2Add(pos, Vector2Scale(vel, dt)); 
 
         // move image inside window till latest pixel of borders
         pos.x = Clamp(pos.x, -offset.x, WINDOW_WIDTH - dimensions.x - offset.x);
-		    pos.y = Clamp(pos.y, -offset.y, WINDOW_HEIGHT - dimensions.y - offset.y);
+		pos.y = Clamp(pos.y, -offset.y, WINDOW_HEIGHT - dimensions.y - offset.y);
 
         // setup canvas (framebuffer) to start drawing
         BeginDrawing();
