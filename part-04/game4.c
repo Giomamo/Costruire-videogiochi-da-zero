@@ -1,14 +1,10 @@
 #include "raylib.h"
-// required for Vector2Add, Vector2Scale and Vector2Normalize
 #include "raymath.h"
 
 #define WINDOW_WIDTH 1280
 #define WINDOW_HEIGHT 640
 #define SPEED 300
 #define SCALE 4.0f
-
-// calculate borders' limits of window
-#define CLAMP(x, low, high)  (((x) < (low)) ? (low) : (((x) > (high)) ? (high) : (x)))
 
 int main(void)
 {   
@@ -41,13 +37,13 @@ int main(void)
         
         // normalize direction and calculate velocity
         direction = Vector2Normalize(direction);
-		    vel = Vector2Scale(direction, SPEED);
+		vel = Vector2Scale(direction, SPEED);
         // update position: pos = pos + (vel * dt)
         pos = Vector2Add(pos, Vector2Scale(vel, dt)); 
 
         // limits movements of texture inside window
-        pos.x = CLAMP(pos.x, 0, WINDOW_WIDTH - dimensions.x);
-        pos.y = CLAMP(pos.y, 0, WINDOW_HEIGHT - dimensions.y);
+        pos.x = Clamp(pos.x, 0, WINDOW_WIDTH - dimensions.x);
+        pos.y = Clamp(pos.y, 0, WINDOW_HEIGHT - dimensions.y);
 
         // setup canvas (framebuffer) to start drawing
         BeginDrawing();
