@@ -51,7 +51,7 @@ int main(void)
         
         // normalize direction and calculate velocity
         direction = Vector2Normalize(direction);
-		    vel = Vector2Scale(direction, SPEED);
+		vel = Vector2Scale(direction, SPEED);
         // update position: pos = pos + (vel * dt)
         pos = Vector2Add(pos, Vector2Scale(vel, dt)); 
 
