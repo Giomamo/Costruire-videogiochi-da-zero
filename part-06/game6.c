@@ -21,13 +21,13 @@ int main(void)
     // load texture
     Texture2D devitt = LoadTexture("assets/devitt.png");
 
-	  Rectangle devittCollisionBorder = GetImageAlphaBorder(devittSprite, 0);
+	Rectangle devittCollisionBorder = GetImageAlphaBorder(devittSprite, 0);
 
     // init position
     Vector2 pos = { (float)46 * SCALE, (float)24 * SCALE } ; 
     // set width, height and offset of image
     Vector2 dimensions = { (float)devittCollisionBorder.width * SCALE, devittCollisionBorder.height * SCALE}; 
-	  Vector2 offset = { (float)devittCollisionBorder.x * SCALE, (float)devittCollisionBorder.y * SCALE};
+	Vector2 offset = { (float)devittCollisionBorder.x * SCALE, (float)devittCollisionBorder.y * SCALE};
 
     float dt = 0;
 
