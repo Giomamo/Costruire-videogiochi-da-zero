@@ -37,10 +37,10 @@ int main(void)
     };
 
     int animationFrame = 0;
-	  float animationFrameTimer = 0;
+	float animationFrameTimer = 0;
     int facingLeft = 0; //boolean
-	  int isTalking = 0; //boolean
-	  float talkTimer = 0;
+	int isTalking = 0; //boolean
+	float talkTimer = 0;
     int canInteract = 0; //boolean
 
 	  // load background texture
@@ -56,7 +56,7 @@ int main(void)
     // load texture
     Texture2D devitt = LoadTexture("assets/devitt.png");
   
-	  Rectangle devittCollisionBorder = GetImageAlphaBorder(devittSprite, 0);
+	Rectangle devittCollisionBorder = GetImageAlphaBorder(devittSprite, 0);
 
     // init rectangle position
     Vector2 pos = { (float)46 * SCALE, (float)24 * SCALE }; 
@@ -79,13 +79,13 @@ int main(void)
         //if (IsKeyDown(KEY_RIGHT)) direction.x += 1.0f;
         //if (IsKeyDown(KEY_LEFT)) direction.x -= 1.0f;
         if (!isTalking) {
-			      if (IsKeyDown(KEY_RIGHT)) direction.x += 1.0f;
+			if (IsKeyDown(KEY_RIGHT)) direction.x += 1.0f;
             if (IsKeyDown(KEY_LEFT)) direction.x -= 1.0f;
         }
         
         // normalize direction and calculate velocity
         direction = Vector2Normalize(direction);
-		    vel = Vector2Scale(direction, SPEED);
+		vel = Vector2Scale(direction, SPEED);
         // update position: pos = pos + (vel * dt)
         pos = Vector2Add(pos, Vector2Scale(vel, dt)); 
 
@@ -93,18 +93,18 @@ int main(void)
         pos.x = Clamp(pos.x, -offset.x, WINDOW_WIDTH - dimensions.x - offset.x);
 
         Rectangle devittCollision = {pos.x + offset.x, pos.y + offset.y, dimensions.x, dimensions.y};
-		    canInteract = CheckCollisionRecs(devittCollision, anthony.area);
+		canInteract = CheckCollisionRecs(devittCollision, anthony.area);
 
         if (direction.x == -1) facingLeft = 1;
-		    if (direction.x == 1) facingLeft = 0;
+		if (direction.x == 1) facingLeft = 0;
 
         // source rectangle (portion of texture to be drawn)
-		    Rectangle source = {0, 0, (float)devitt.width, (float)devitt.height};
+		Rectangle source = {0, 0, (float)devitt.width, (float)devitt.height};
 		
         if (facingLeft) source.width = -source.width;
 
         // destination rectangle
-		    Rectangle dest = {pos.x, pos.y, (float)devitt.width * SCALE, (float)devitt.height * SCALE};  
+		Rectangle dest = {pos.x, pos.y, (float)devitt.width * SCALE, (float)devitt.height * SCALE};  
         
         // setup canvas (framebuffer) to start drawing
         BeginDrawing();
