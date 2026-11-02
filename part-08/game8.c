@@ -43,7 +43,7 @@ int main(void)
 	float talkTimer = 0;
     int canInteract = 0; //boolean
 
-	  // load background texture
+	// load background texture
     Texture2D hall = LoadTexture("assets/hall.png");
 
     struct npc anthony = {
@@ -62,7 +62,7 @@ int main(void)
     Vector2 pos = { (float)46 * SCALE, (float)24 * SCALE }; 
     // set width, height and offset of image
     Vector2 dimensions = { (float)devittCollisionBorder.width * SCALE, devittCollisionBorder.height * SCALE}; 
-	  Vector2 offset = { (float)devittCollisionBorder.x * SCALE, (float)devittCollisionBorder.y * SCALE};
+	Vector2 offset = { (float)devittCollisionBorder.x * SCALE, (float)devittCollisionBorder.y * SCALE};
 
     float dt = 0;
     // set execution to 60 frames per second
@@ -76,8 +76,6 @@ int main(void)
         Vector2 vel = {0, 0};
 
         // set direction on keypressed (right, left)
-        //if (IsKeyDown(KEY_RIGHT)) direction.x += 1.0f;
-        //if (IsKeyDown(KEY_LEFT)) direction.x -= 1.0f;
         if (!isTalking) {
 			if (IsKeyDown(KEY_RIGHT)) direction.x += 1.0f;
             if (IsKeyDown(KEY_LEFT)) direction.x -= 1.0f;
