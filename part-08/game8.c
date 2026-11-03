@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "raylib.h"
 #include "raymath.h"
 
@@ -11,7 +10,7 @@
 #define FRAME_DURATION 0.1
 
 struct npc {
-	char name[7];
+	char name[];
 	Texture2D texture;
 	Vector2 pos;
 	Rectangle area;
