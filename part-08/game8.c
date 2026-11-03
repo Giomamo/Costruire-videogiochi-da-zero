@@ -10,7 +10,7 @@
 #define FRAME_DURATION 0.1
 
 struct npc {
-	char name[];
+	char name[8];
 	Texture2D texture;
 	Vector2 pos;
 	Rectangle area;
